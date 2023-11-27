@@ -1,0 +1,35 @@
+:root {
+    --yellow: #fcbf16;
+    --yellow-lighter: #fbdc88;
+    --blue: #173451;
+    --blue-lighter: #245586;
+    --red: #992154;
+    --red-lighter: #984a6b;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 32px;
+    color: var(--blue);
+}
+
+.counter {
+    width: 400px;
+    border: 3px solid var(--yellow);
+    margin: 100px auto;
+    padding: 20px;
+    text-align: center;
+
+    & __actions {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+    }
+}

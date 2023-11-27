@@ -1,0 +1,17 @@
+@use '../globals';
+@use '../utils';
+
+.counter {
+    width: 400px;
+    border: 3px solid var(--yellow);
+    margin: 100px auto;
+    padding: 20px;
+    text-align: center;
+
+    & __actions {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+    }
+}

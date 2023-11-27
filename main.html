@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/public/css/main.css">
+    <link rel="stylesheet"
+        href="./src/public/icon/fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/css/all.min.css">
+    <script src="./dist/main.js"></script>
+    <title>DOM Counter</title>
+</head>
+
+<body>
+    <div class="counter">
+        <h2>Bộ đếm Kmin</h2>
+        <form>
+            <fieldset>
+                <legend>Thiết lập</legend>
+                <div className="container">
+                    <label>
+                        Số bắt đầu
+                        <input id="start_id" name="start" type="number" value="0" size="15" onChange="" />
+                    </label>
+
+                    <label>
+                        <input id="end_id" name="end" type="number" value="100" onChange="" />
+                        Số kết thúc
+                        </labe>
+                </div>
+                <p className="error-message">Lỗi: ...</p>
+                <input id="btn_id" type="button" value="Áp dụng" onClick="" />
+            </fieldset>
+        </form>
+        <div class="num">
+            <div>
+                <span id="btn_decrease" class="btn-change">&lt;</span>
+                <span id="content_show_number">0</span>
+                <span id="btn_ascending" class="btn-change">&gt;</span>
+            </div>
+            <button id="btn_play" class="btn btn--blue">
+                Play
+                <i style="font-size: 10px;" class="fa-solid fa-play"></i>
+            </button>
+            <button id="btn_pause" class="btn btn--blue" style="display: none;">
+                Pause
+                <i style="font-size: 10px;" class="fa-regular fa-circle-stop"></i>
+            </button>
+            <button id="btn_refresh" class="btn btn--blue">
+                Refresh
+                <i style="font-size: 10px;" class="fa-solid fa-arrows-rotate"></i>
+            </button>
+        </div>
+        <div class="counter__actions">
+            <button id="btn_ShowHello" class="btn btn--yellow">Xin chào</button>
+            <button id="btn_ShowGoogbye" class="btn btn--blue">Tạm biệt</button>
+        </div>
+    </div>
+</body>
+
+</html>
